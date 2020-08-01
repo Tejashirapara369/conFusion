@@ -32,14 +32,8 @@
     fxLayout="column"
     fxLayoutGap="10px">
 
-    <div fxFlex>
-        <div>
-          <h1><b>Menu</b></h1>
-          <hr>
-        </div>
-      </div>
  <mat-list fxFlex>
-         
+  <h1><b>Comments</b></h1>
    <mat-list-item *ngFor="let cmnt of dish.comments">
      <h1 matLine> {{cmnt.comment}} </h1>
      <p matLine> {{ cmnt.rating }}&nbsp;Star</p>
