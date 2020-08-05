@@ -10,19 +10,24 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule, MatCard } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishDetailsComponent } from './dish-details/dish-details.component';
-import { DishService} from './services/dish.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { DishService} from './services/dish.service';
+import { LeaderService } from './services/leader.service';
+import { PromotionService } from './services/promotion.service';
+
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -34,7 +39,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +52,15 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
-  providers: [DishService],
+  entryComponents:[
+    LoginComponent
+  ],
+  providers: [   DishService, 
+    LeaderService,
+    PromotionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
