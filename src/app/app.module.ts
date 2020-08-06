@@ -12,6 +12,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule, MatCard } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule, MatFormField } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
@@ -53,7 +57,11 @@ import { LoginComponent } from './login/login.component';
     MatCardModule,
     MatButtonModule,
     AppRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
   ],
   entryComponents:[
     LoginComponent
