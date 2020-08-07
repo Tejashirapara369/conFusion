@@ -1,10 +1,5 @@
-<div class="container"
-    fxLayout="row wrap"
-    fxLayout.sm="column"
-    fxLayout.xs="column"
-    fxLayoutAlign.gt-md="space-around center"
-    fxLayoutGap="10px" 
-    fxLayoutGap.xs="0">
+<div class="container" fxLayout="row wrap" fxLayout.sm="column" fxLayout.xs="column"
+  fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0" *ngIf="dish">
 
   <div fxFlex="100">
     <div>
@@ -14,43 +9,46 @@
   </div>
 
   <div fxFlex="40">
-    <div fxFlex *ngIf="dish">
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>
-              <h3><b>{{dish.name | uppercase}}</b></h3>
-            </mat-card-title>
-          </mat-card-header>
-          <img mat-card-image src={{dish.image}} alt={{dish.name}}>
-          <mat-card-content>
-            <p>{{dish.description}}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button (click)="goBack()">BACK</button>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
-      </div>
+    <div fxFlex >
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <h3><b>{{dish.name | uppercase}}</b></h3>
+          </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src={{dish.image}} alt={{dish.name}}>
+        <mat-card-content>
+          <p>{{dish.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="goBack()">BACK</button>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </div>
 
+
   <div fxFlex="40">
-    <div class="container"
-    fxLayout="column"
-    fxLayoutGap="10px">
+    <div class="container" fxLayout="column" fxLayoutGap="10px">
 
- <mat-list fxFlex>
-  <h1><b>Comments</b></h1>
-   <mat-list-item *ngFor="let cmnt of dish.comments">
-     <h1 matLine> {{cmnt.comment}} </h1>
-     <p matLine> {{ cmnt.rating }}&nbsp;Star</p>
-     <p matLine>
-       <span> {{cmnt.date | date }}&nbsp;--{{ cmnt.author | uppercase }}</span>
-     </p>
-   </mat-list-item>
- </mat-list>
+      <mat-list fxFlex>
+        <h1><b>Comments</b></h1>
+        <mat-list-item *ngFor="let cmnt of dish.comments">
+          <h1 matLine> {{cmnt.comment}} </h1>
+          <p matLine> {{ cmnt.rating }}&nbsp;Star</p>
+          <p matLine>
+            <span> {{cmnt.date | date }}&nbsp;--{{ cmnt.author | uppercase }}</span>
+          </p>
+        </mat-list-item>
+      </mat-list>
 
+    </div>
+  </div>
 </div>
-
+<div [hidden]="dish">
+  <mat-spinner></mat-spinner>
+  <h3>Loading...Please wait</h3>
 </div>
