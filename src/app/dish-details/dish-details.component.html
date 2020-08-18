@@ -80,7 +80,11 @@
 
 </div>
 
-<div [hidden]="dish">
+<div [hidden]="dish || errMess">
   <mat-spinner></mat-spinner>
   <h3>Loading...Please wait</h3>
+</div>
+<div fxFlex *ngif="errMess">
+  <h2>Error</h2>
+  <h4>{{ errMess }}</h4>
 </div>
