@@ -35,6 +35,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DishService} from './services/dish.service';
 import { LeaderService } from './services/leader.service';
 import { PromotionService } from './services/promotion.service';
+import { baseURL } from './shared/baseurl';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
@@ -78,9 +79,12 @@ import { LoginComponent } from './login/login.component';
   entryComponents:[
     LoginComponent
   ],
-  providers: [   DishService, 
+  providers: [  
+    DishService, 
     LeaderService,
-    PromotionService],
+    PromotionService,
+    {provide: 'baseURL', useValue: baseURL},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
