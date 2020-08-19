@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Dish } from '../shared/dish';
 import { Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { baseURL } from '../shared/baseurl';
 import { ProcessHTTPMsgService } from './process-httpmsg.service';
 
@@ -14,6 +14,7 @@ export class DishService {
 
   constructor(private http: HttpClient,
     private processHTTPMsgService: ProcessHTTPMsgService) { }
+
   getDishes(): Observable<Dish[]> {
     return this.http.get<Dish[]>(baseURL + 'dishes')
     .pipe(catchError(this.processHTTPMsgService.handleError));
@@ -21,7 +22,7 @@ export class DishService {
 
   getDish(id: string): Observable<Dish> {
     return this.http.get<Dish>(baseURL + 'dishes/' + id)
-    .pipe(catchError(this.processHTTPMsgService.handleError));
+      .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 
   getFeaturedDish(): Observable<Dish> {
@@ -30,8 +31,18 @@ export class DishService {
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 
-  getDishIds(): Observable<string[] | any> {
+  getDishIds(): Observable<number[] | any> {
     return this.getDishes().pipe(map(dishes => dishes.map(dish => dish.id)))
     .pipe(catchError(error => error));  
+  }
+
+  putDish(dish: Dish): Observable<Dish>{
+    const HttpOptions = {
+      headers: new HttpHeaders({
+        'content-type': 'application/json'
+      })
+    };
+    return this.http.put<Dish>(baseURL + 'dishes/' + dish.id, dish, HttpOptions )
+      .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 }
