@@ -1,0 +1,138 @@
+[33mcommit 5f028caeff3bc4a9c927821430f347fca49cf6ae[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: tejashirapara369 <tejashirapara369@gmail.com>
+Date:   Wed Aug 19 06:01:46 2020 -0700
+
+    added animation
+
+[33mcommit e35b1fb8d6e012ad2ff2b09a77a1e3e017fe34c4[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: tejashirapara369 <tejashirapara369@gmail.com>
+Date:   Tue Aug 18 05:25:17 2020 -0700
+
+    http part2
+
+[33mcommit 719c5e674677b020de055e9bceadb257799a6075[m
+Author: tejashirapara369 <tejashirapara369@gmail.com>
+Date:   Tue Aug 18 04:32:46 2020 -0700
+
+    http part1
+
+[33mcommit f7176d82e1c6eb5f1e880c5a025d5197dfe49b01[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Sat Aug 15 12:30:07 2020 +0530
+
+    complete assignment3
+
+[33mcommit 9a3f5ea0423bbf378171937a328c57565b3066ce[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Fri Aug 7 20:50:54 2020 +0530
+
+    rxjs p-art 2
+
+[33mcommit 199da2862afcb0e284dab586e673e39795e9f10c[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Fri Aug 7 19:12:31 2020 +0530
+
+    Rxjs Parrt 1
+
+[33mcommit c41f232d5b1f0e512bc7060955e97faed0b0bb9e[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Fri Aug 7 18:18:07 2020 +0530
+
+    promise part 2
+
+[33mcommit 940cc9ba168b5fbc4241036b6bd631c62e00287e[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Fri Aug 7 15:59:24 2020 +0530
+
+    Reactive forms part2
+
+[33mcommit f38bd4eaf97d03362c339cf59280a2ffd38c51b5[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Thu Aug 6 21:10:41 2020 +0530
+
+    Reactive Forms Part 1
+
+[33mcommit 4bc704a4d0285f88e971a226407ad11f5d8de36e[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Thu Aug 6 16:46:33 2020 +0530
+
+    Template Forms Part 2
+
+[33mcommit cb9756a770a6530586f04176867f238a28fde5bb[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Wed Aug 5 18:49:50 2020 +0530
+
+    login2
+
+[33mcommit a0edeae5226c754fae52199ba9d01ff3b6e42ed0[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Wed Aug 5 18:07:18 2020 +0530
+
+    add logincomponent dialog
+
+[33mcommit a096c2ed729d4f96be9bf1bcba06c51b0e78a0a2[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Sat Aug 1 17:03:18 2020 +0530
+
+    routing part 2
+
+[33mcommit 9c879070e313737514ecef7364b0414056d2c787[m
+Merge: 1e22935 c1a4279
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Sat Aug 1 16:49:12 2020 +0530
+
+    Merge branch 'master' of https://bitbucket.org/tejashirapara369/confusion
+
+[33mcommit 1e22935d67dec44d6f7aae05709385c90d6c48eb[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Sat Aug 1 16:48:39 2020 +0530
+
+    contact page completed
+
+[33mcommit c1a427935dc33dd61ab427815aadad617cbccbfc[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Sat Aug 1 11:48:11 2020 +0530
+
+    contact page completed
+
+[33mcommit 835b97caf59d3f76e6cfb19a2ae1a63e4fde3e2e[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Fri Jul 31 18:56:03 2020 +0530
+
+    basic routing
+
+[33mcommit 8710c564f1b18064d7eae91e21f99bc2802db098[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Thu Jul 30 17:37:06 2020 +0530
+
+    basic service
+
+[33mcommit 91885f830876b19a562ee5d9a49136a36e96c7ce[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Thu Jul 30 17:29:21 2020 +0530
+
+    data binding
+
+[33mcommit 5f19f7480369b4d098ac8eafc5269c4f6edd0365[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Thu Jul 30 15:53:14 2020 +0530
+
+    Menu component Part 2
+
+[33mcommit cdc0d78450e151537eb458e1652eb3e6d093286d[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Thu Jul 30 15:34:45 2020 +0530
+
+    complete Menu component
+
+[33mcommit a83a775bf2905e6a32950cbb5c52eb6e627be570[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Wed Jul 29 18:33:27 2020 +0530
+
+    Configuring Angular
+
+[33mcommit 049cb54c5b46d6b98815f260994e2d18db75151b[m
+Author: tejashirapara369 <tejashirapara3692gmail.com>
+Date:   Wed Jul 29 17:50:20 2020 +0530
+
+    initial commit

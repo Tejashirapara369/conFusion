@@ -7,8 +7,6 @@ import { switchMap } from 'rxjs/operators';
 import { Comments } from '../shared/comments';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { visibility, flyInOut } from '../animations/app.animation';
-import { Observable } from 'rxjs';
-import { HttpHeaders } from '@angular/common/http';
 
 
 @Component({
